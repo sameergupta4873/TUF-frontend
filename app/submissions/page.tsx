@@ -18,7 +18,7 @@ const Page = () => {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const response = await fetch("http://tuf-backend-dun.vercel.app/api/v1/submissions");
+      const response = await fetch("https://tuf-backend-dun.vercel.app/api/v1/submissions");
       const data = await response.json();
       console.log(data);
       setTableData(data?.submissions || []);
