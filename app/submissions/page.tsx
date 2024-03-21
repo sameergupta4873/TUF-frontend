@@ -18,7 +18,7 @@ const Page = () => {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:5000/api/v1/submissions");
+      const response = await fetch("http://tuf-backend-dun.vercel.app/api/v1/submissions");
       const data = await response.json();
       console.log(data);
       setTableData(data?.submissions || []);
@@ -76,8 +76,8 @@ const Page = () => {
   };
 
   useEffect(() => {
-    fetchData(1, 10);
-  }, []);
+    fetchData();
+  }, [loading]);
 
   return (
     <>
