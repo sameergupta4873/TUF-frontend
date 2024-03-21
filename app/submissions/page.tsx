@@ -103,8 +103,7 @@ const Page = () => {
                 </tr>
               </thead>
               <tbody>
-                {!loading &&
-                  tableData.length !== 0 &&
+                {
                   tableData?.map((item: any, index: any) => {
                     return (
                       <>
