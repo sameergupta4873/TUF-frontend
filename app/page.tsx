@@ -207,9 +207,9 @@ export default function Home() {
             </div> */}
           </div>
           <div className="flex justify-center items-end h-full">
-            <button className="px-[1rem] h-full bg-[#FFFFFF] hover:bg-[#EAEAEC] rounded-sm text-[0.85rem] font-[500] mr-2.5 border">
+            {/* <button className="px-[1rem] h-full bg-[#FFFFFF] hover:bg-[#EAEAEC] rounded-sm text-[0.85rem] font-[500] mr-2.5 border">
               Run Code
-            </button>
+            </button> */}
             <button
               onClick={onSubmit}
               className="px-[2rem] h-full bg-[#01751F] text-white hover:bg-[#015217] rounded-sm text-[0.85rem] font-[500]"
